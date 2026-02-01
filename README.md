@@ -196,7 +196,32 @@ server: {
 
 
 
-##  Author
+
+## 🐳 Docker Support
+
+You can containerize the frontend application using Docker.
+
+### Prerequisites
+
+- Docker installed on your machine.
+
+### Build the Image
+
+```bash
+docker build -t filebrowser-frontend .
+```
+
+### Run the Container
+
+```bash
+docker run -p 5173:80 filebrowser-frontend
+```
+
+Now access the application at `http://localhost:5173`.
+
+**Note:** The default Nginx configuration assumes the backend is running at `http://host.docker.internal:8080` (standard for Docker Desktop on Windows/Mac). If you require a different backend URL, you may need to adjust `nginx.conf`.
+
+## 👨‍💻 Author
 
 Amritanshu Goutam
 

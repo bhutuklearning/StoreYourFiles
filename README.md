@@ -6,6 +6,8 @@ A modern, feature-rich file browser web application built with React and Vite. T
 
 This application was built as a technical assignment demonstrating full-stack development capabilities with React and FastAPI backend integration. It showcases modern web development practices, clean UI/UX design, and robust state management.
 
+![Home Page](./Images/home-page.png)
+
 ## Features
 
 ### Core Functionality
@@ -116,7 +118,9 @@ The application uses JWT-based authentication:
 3. All API requests include the token in the `Authorization` header
 4. Automatic redirect to login on 401 responses
 
-## 📡 API Integration
+![Login Page](./Images/login-page.png)
+
+## API Integration
 
 The frontend communicates with the File Browser backend via REST API:
 
@@ -148,6 +152,8 @@ npm run build
 - Displays detailed metadata on file selection
 - Shows file path, type, size, and modification date
 - Clean, organized presentation
+
+![File Details](./Images/previewing-file-details.png)
 
  **Refresh Functionality**
 - Manual refresh button in toolbar
@@ -193,7 +199,8 @@ server: {
 ## Docker Support
 
 You can containerize the frontend application using Docker.
-Image which can be pulled: docker pull amritanshudeveloper/filebrowser-frontend:latest
+Image which can be pulled:
+ ```docker pull amritanshudeveloper/filebrowser-frontend:latest```
 
 ### Prerequisites
 

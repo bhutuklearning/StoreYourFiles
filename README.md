@@ -9,14 +9,13 @@ This application was built as a technical assignment demonstrating full-stack de
 ## Features
 
 ### Core Functionality
-- ** File Listing** - Browse files and directories with detailed metadata
+- ** File Listing** - Browse files with detailed metadata
 - ** File Details** - View comprehensive file information including:
   - File name and type
   - File size (with human-readable formatting)
   - Last modified timestamp
   - Full file path
 - ** Refresh** - Manual refresh capability to reload file listings
-- ** Navigation** - Breadcrumb navigation for easy directory traversal
 
 ### UI/UX Features
 - ** Theme Switching** - Toggle between Light and Dark modes
@@ -35,13 +34,13 @@ This application was built as a technical assignment demonstrating full-stack de
 
 ##  Tech Stack
 
-- **Frontend Framework**: React 18
+- **Frontend Framework**: React 19
 - **Build Tool**: Vite 7
 - **Styling**: Tailwind CSS v4
 - **State Management**: Zustand
 - **Routing**: React Router DOM v7
 - **HTTP Client**: Axios
-- **Backend**: FastAPI (File Browser Server)
+- **Backend**: Server used of the filebrowser as suggested
 
 ##  Prerequisites
 
@@ -137,12 +136,6 @@ npm run dev
 # Build for production
 npm run build
 
-# Preview production build
-npm run preview
-
-# Lint code
-npm run lint
-```
 
 ##  Assignment Requirements Met
 
@@ -165,7 +158,7 @@ npm run lint
 - Error handling with retry capability
 - Empty state when no files exist
 
-## 🌟 Additional Features
+##  Additional Features
 
 Beyond the core requirements, this project includes:
 
@@ -197,9 +190,10 @@ server: {
 
 
 
-## 🐳 Docker Support
+## Docker Support
 
 You can containerize the frontend application using Docker.
+Image which can be pulled: docker pull amritanshudeveloper/filebrowser-frontend:latest
 
 ### Prerequisites
 
@@ -221,7 +215,7 @@ Now access the application at `http://localhost:5173`.
 
 **Note:** The default Nginx configuration assumes the backend is running at `http://host.docker.internal:8080` (standard for Docker Desktop on Windows/Mac). If you require a different backend URL, you may need to adjust `nginx.conf`.
 
-## 👨‍💻 Author
+## Author
 
 Amritanshu Goutam
 

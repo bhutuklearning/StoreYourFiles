@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0077b6;
+  --color-secondary: #0096c7;
+}
+
+:root {
+  --bg-color: #f0f9ff;
+  --bg-gradient-1: rgba(0, 119, 182, 0.1);
+  --bg-gradient-2: rgba(0, 180, 216, 0.1);
+  --bg-gradient-3: rgba(0, 119, 182, 0.05);
+}
+
+.dark {
+  --bg-color: #03045e;
+  /* User requested Deep Blue */
+  --bg-gradient-1: rgba(0, 119, 182, 0.3);
+  /* Lighter blue highlight */
+  --bg-gradient-2: rgba(2, 6, 23, 0.6);
+  /* Dark shadow */
+  --bg-gradient-3: rgba(0, 180, 216, 0.2);
+  /* Cyan highlight */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  background-image:
+    radial-gradient(at 0% 0%, var(--bg-gradient-1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, var(--bg-gradient-2) 0, transparent 50%),
+    radial-gradient(at 100% 0%, var(--bg-gradient-3) 0, transparent 50%);
+  background-attachment: fixed;
+  transition: background-color 0.3s ease;
+}
+
+/* Fallback for light mode override if needed, but var handling is better */
+@media (prefers-color-scheme: light) {
+  /* Default to light mode vars if not explicitly set */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
